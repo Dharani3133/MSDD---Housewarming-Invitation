@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housewarming Invitation</title>
+    <style>
+        body { margin: 0; display: flex; justify-content: center; background: #f4f4f4; }
+        .wrapper { position: relative; display: inline-block; max-width: 100%; }
+        img { display: block; width: 100%; height: auto; }
+        
+        /* This is the secret "Upgrade" layer over the QR code */
+        .map-link {
+            position: absolute;
+            top: 77%;    /* Position from top */
+            left: 71%;   /* Position from left */
+            width: 17%;  /* Width of the QR area */
+            height: 12%; /* Height of the QR area */
+            background: rgba(255, 0, 0, 0); /* Keep at 0 to stay invisible */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <img src="invite.jpg" alt="Invitation">
+        
+        <a href="https://maps.app.goo.gl/crTKdnwqhPRhx3Bj7" target="_blank" class="map-link"></a>
+    </div>
+
+</body>
+</html>
